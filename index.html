@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo Mexican Restaurant</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--External CSS link-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
         <nav class="navbar navbar-expand-lg fixed-top opacity-hover-off" id="myNavbar">
             <div class="container-fluid">
-            <ul class="nav__links">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size: 2rem;">Menu</a>
+                    <a class="nav-link" href="#" style="font-size: 2rem;"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size: 2rem;">Reservation</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu" style="font-size: 2rem;">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size: 2rem;">Events</a>
+                    <a class="nav-link" href="#reservation" style="font-size: 2rem;">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-size: 2rem;">Gallery</a>
+                    <a class="nav-link" href="#events" style="font-size: 2rem;">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery" style="font-size: 2rem;">Gallery</a>
                 </li>
             </ul>
             </div>
@@ -33,11 +43,12 @@
         <!--Header with image-->
         <header class="bg-img d-flex flex-column justify-content-between" id="home">
             <div></div>
+            <!--justify-content-center in class when using logo-->
             <div class="d-flex flex-column text-center">
                 <span class="display-1">REALLY<br>GOOD PIZZA</span>
-                <p><a href="menu" class="btn btn-lg btn-dark hover-btn fs-2">Let me see the menu</a></p>
+                <p><a href="#menu" class="btn btn-lg btn-dark hover-btn fs-2">Let me see the menu</a></p>
             </div>
-            <div class="d-flex">
+            <div class="d-flex justify-content-start">
                 <span class="bg-dark text-white p-3 h2">Open from 10am to 11pm - Call 999-999-9999</span>
             </div>
         </header>
@@ -57,74 +68,36 @@
         </section>
 
         <!--Menu Container-->
-        <div class="contain-fluid bg-black tex-white py-5 display-4" id="menu"> 
+        <div clas="container-fluid bg-black text-white py-5 display-4" id="menu">
             <div class="container">
                 <h1 class="text-center display-2 mb-5">The Menu</h1>
-                <div>
-                    
+                <div class="text-center border border-dark">
+                    <div class="d-flex">
+                        <a href="" onclick="openMenu(event, 'Pizza');" class="col-4-tablink p-3 hover-red">Pizza
+                        </a>
+                        <a href="" onclick="openMenu(event, 'Pasta');" class="col-4-tablink p-3 hover-red">Pasta
+                        </a>
+                        <a href="" onclick="openMenu(event, 'Starter');" class="col-4-tablink p-3 hover-red">Starter
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-       
-        <div class="carousel">
-         <button class="carousel__button carousel__button--left">
-            <img src="Images/arrow-left-svg.svg" alt="">
-         </button>
-         <div class="carousel__track-container">
-            <ul class="carousel__track">
-                <li class="carousel__slide">
-                    <img class="carousel_image" src="Images/Shrimp quesadilla.jpeg">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel_image src="Images/salmon.jpeg">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel_image src="Images/burger.jpeg">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel_image src="Images/chip.salsa.jpeg">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel_image src="Images/chicken.jpeg">
-                </li>
-            </ul>
-         </div>
-            <button class="carousel__button carousel__button--right">
-                <img src="Images/arrow-right-svg.svg" alt="">
-            </button>
-
-        <div class="carousel__nav">
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
-        </div>    
+    <!--Pizza Menu-->
+    <div id="Pizza" class="container-fluid menu p-4 bg-white">
+        <!--Margherita pizza-->
+        <div class="d-flex justify-content-between align-items baseline">
+            <h1 class="mb-0 display-3"><b>Margherita</b></h1>
+            <span class="badge bg-dark text-white">$12.50</span>
         </div>
-     
+        <p class="text-muted">Fresh tomatoes, fresh mozzarealla, fresh basil</p>
+        <hr class="text-muted">
+    </div>
+    <!--Pasta Menu-->
+    <!--Starter Menu-->
+        
 
-        <!--
-    <section>
-        <h3>Gallery</h3>
-        <div class="gallery">
-            <img src="burger.jpeg" height="100" width="100">
-            <img src="chicken.jpeg" height="100" width="100">
-            <img src="chip.salsa.jpeg" height="100">
-            <img src="Margarta.jpeg" height="100">
-            <img src="Shrimp quesadilla.jpeg" height="100">
-        </div>
-    </section>
-
-    <footer style="background-image: url('Margarta.jpeg')";>
-        <nav>
-        <p>Follow Us</p>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Email</li>
-        </ul>
-        </nav>
-        -->
-    </footer>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

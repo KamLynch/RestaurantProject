@@ -52,8 +52,7 @@
                 <span class="bg-dark text-white p-3 h2">Open from 10am to 11pm - Call 999-999-9999</span>
             </div>
         </header>
-
-        <section class="our-story">
+<!--<section class="our-story">
             <h2>Discover Our Story</h2>
             <p>Our locally owned neighborhood restaurant offers a seasonal menu of inventive Hispanic fresh cuisine cooked simply and
             deliciously in a warm and inviting atmosphere. Specializing in farm to table favorites with a unique twist, we serve
@@ -65,7 +64,8 @@
             
             With a full bar, live music, trivia, bingo and a game room for children of all ages, we are the perfect destination for
             any occasion.</p>
-        </section>
+        </section>-->
+        
 
         <!--Menu Container-->
         <div clas="container-fluid bg-black text-white py-5 display-4" id="menu">
@@ -73,34 +73,103 @@
                 <h1 class="text-center display-2 mb-5">The Menu</h1>
                 <div class="text-center border border-dark">
                     <div class="d-flex">
-                        <a href="" onclick="openMenu(event, 'Pizza');" class="col-4-tablink p-3 hover-red">Pizza
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza
                         </a>
-                        <a href="" onclick="openMenu(event, 'Pasta');" class="col-4-tablink p-3 hover-red">Pasta
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');" class="col-4 tablink p-3 hover-red">Pasta
                         </a>
-                        <a href="" onclick="openMenu(event, 'Starter');" class="col-4-tablink p-3 hover-red">Starter
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" class="col-4 tablink p-3 hover-red">Starter
                         </a>
                     </div>
                 </div>
+
+                <!--Pizza Menu-->
+                <div id="Pizza" class="container-fluid menu p-4 bg-white">
+                    <!--Margherita pizza-->
+                    <div class="d-flex justify-content-between align-items baseline">
+                        <h1 class="mb-0 display-3"><b>Margherita</b></h1>
+                        <span class="badge bg-dark text-white">$12.50</span>
+                    </div>
+                    <p class="text-muted">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <hr class="text-muted">
+                </div>
+                
+                <!--Pasta Menu-->
+                <div id="Pasta" class="container-fluid menu p-4 bg-white">
+                    <!--Lasagna-->
+                    <div class="d-flex justify-content-between align-items baseline">
+                        <h1 class="mb-0 display-3"><b>Lasagna</b></h1>
+                        <span class="badge bg-dark text-white">$13.50</span>
+                    </div>
+                    <p class="text-muted">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <hr class="text-muted">
+                </div>
+                
+                <!--Starter Menu-->
+                <div id="Starter" class="container-fluid menu p-4 bg-white">
+                    <!--Today's Soup-->
+                    <div class="d-flex justify-content-between align-items baseline">
+                        <h1 class="mb-0 display-3"><b>Today's Soup </b><span class="badge bg-grey small-tag">Seasonal</span></h1>
+                        <span class="badge bg-dark text-white">$5.50</span>
+                    </div>
+                    <p class="text-muted">Ask the waiter</p>
+                    <hr class="text-muted">
+                </div>
             </div>
         </div>
-    <!--Pizza Menu-->
-    <div id="Pizza" class="container-fluid menu p-4 bg-white">
-        <!--Margherita pizza-->
-        <div class="d-flex justify-content-between align-items baseline">
-            <h1 class="mb-0 display-3"><b>Margherita</b></h1>
-            <span class="badge bg-dark text-white">$12.50</span>
+   
+        <!--About Container-->
+        <div class="container-fluid py-5 text-white" style="background-color: darkslateblue;" id="about">
+        <div class="container">
+            <h1 class="text-center display-2 mb-3">ABOUT</h1>
+            <h1 class="display-4"><b>Opening Hours</b></h1>
+            <div class="row fs-2">
+                <div class="col-6">
+                    <p>Mon & Tue Closed</p>
+                    <p>Wednesday 10.00 - 10.00</p>
+                    <p>Thursday 10.00 - 10.00</p>
+                </div>
+                <div class="col-6">
+                    <p>Mon & Tue Closed</p>
+                    <p>Saturday 10.00 - 10.00</p>
+                    <p>Sunday Closed</p>
+                </div>
+
+                <h1 class="display-4"><b>History</b></h1>
+                <p class="fs-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Imperdiet dui accumsan sit amet. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices dui
+                    sapien eget mi proin. Cras ornare arcu dui vivamus arcu felis bibendum. At in tellus integer feugiat scelerisque varius
+                    morbi enim nunc. Vitae auctor eu augue ut lectus arcu. Porttitor lacus luctus accumsan tortor posuere ac ut consequat
+                    semper. Tristique magna sit amet purus gravida. Volutpat maecenas volutpat blandit aliquam etiam erat. Non diam
+                    phasellus vestibulum lorem sed risus ultricies tristique. Nascetur ridiculus mus mauris vitae ultricies leo integer.
+                    Pellentesque habitant morbi tristique senectus et. Turpis egestas sed tempus urna et pharetra pharetra massa massa.
+                    Consectetur a erat nam at lectus.
+                </p>
+                <div class="row">
+                    <div class="col-lg-3 col-med-4 col-sm-12">
+                        <p class="fs-2"><b>The Chef?
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Imperdiet dui accumsan sit amet. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ultrices dui
+                            sapien eget mi proin. Cras ornare arcu dui vivamus arcu felis bibendum. At in tellus integer feugiat scelerisque varius
+                            morbi enim nunc. Vitae auctor eu augue ut lectus arcu. Porttitor lacus luctus accumsan tortor posuere ac ut consequat
+                            semper.
+                        </b></p>
+
+                    </div>
+                    <div class="col-lg-3 col-med-4 col-sm-12">
+                        <img src="assets/taco.jpeg" alt="chef" style="width:200px;" class="rounded-circle">
+                    </div>
+                </div>
+                <p class="fs-2">We are proud of our stuff.</p>
+                <img src="assets/anthony-espinosa-UwdSTMjnN2I-unsplash.jpeg" alt="" style="width: 100%;" class="my-3 img-greyscale">
+
+            </div>
         </div>
-        <p class="text-muted">Fresh tomatoes, fresh mozzarealla, fresh basil</p>
-        <hr class="text-muted">
-    </div>
-    <!--Pasta Menu-->
-    hhgg 
-    <!--Starter Menu-->
-        
+
+        </div>
+        <h1 class="display-4"><b></b></h1>
 
  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
